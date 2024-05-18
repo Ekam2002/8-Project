@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { addToCart } from "../../redux/cartSlice";
 import { toast } from "react-toastify";
 
-function ProductCard() {
+function HomePageProducts() {
   const context = useContext(myContext);
   const {
     mode,
@@ -46,7 +46,7 @@ function ProductCard() {
             .filter((obj) => obj.title.toLowerCase().includes(searchkey))
             .filter((obj) => obj.category.toLowerCase().includes(filterType))
             .filter((obj) => obj.price.includes(filterPrice))
-            .slice(0, 8)
+            // .slice(0, 8)
             .map((item, index) => {
               const { title, price, description, imageUrl, id } = item;
               return (
@@ -110,4 +110,4 @@ function ProductCard() {
   );
 }
 
-export default ProductCard;
+export default HomePageProducts;

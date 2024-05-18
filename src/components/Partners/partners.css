@@ -1,0 +1,30 @@
+.img-sl-con{
+    width: 100%;
+    height: 13vw;
+}
+
+
+.img-sl-con img{
+    
+    width: 90%;
+    height: 7vw;
+}
+
+.pr-head{
+    margin-top: 100px;
+    margin-bottom: 40px;
+    font-size: 2.2em;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* font-family: "Anek Latin", sans-serif; */
+}
+
+.awssld__content{
+    background-color: #dedcdc;
+    height: 12vw;
+    width: 100%;
+}
